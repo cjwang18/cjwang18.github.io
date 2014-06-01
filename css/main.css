@@ -1,14 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100);
 
 #menu {
-	background-image: -webkit-gradient(
-		linear, left top, left bottom, from(rgba(60,60,60,0.7)),
-		to(rgba(30,30,30,0.9))
-	);
-	background-image: -moz-linear-gradient(
-		top center,
-		rgba(60, 60, 60, 0.7) 0%, rgba(30, 30, 30, 0.9) 95%
-	);
+	background: linear-gradient(rgba(60, 60, 60, 0.7) 0%, rgba(30, 30, 30, 0.9) 95%);
 	bottom: 0;
 	height: 75px;
 	left: 0;
@@ -17,8 +10,6 @@
 	top: 0;
 	right: 0;
 	width: 100%;
-	-webkit-box-shadow:0 3px 10px rgba(0, 0, 0, 0.5);
-	-moz-box-shadow:0 3px 10px rgba(0, 0, 0, 0.5);
 	box-shadow:0 3px 10px rgba(0, 0, 0, 0.5);
 }
 
