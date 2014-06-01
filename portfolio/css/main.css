@@ -1,0 +1,102 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100);
+
+body {
+	margin: 0px;
+	min-height: 100%;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ababab), to(#efefef)) fixed;
+}
+
+#header {
+	background-image: -webkit-gradient(
+		linear, left top, left bottom, from(rgba(118, 118, 118, 1.0)),
+		to(rgba(52, 52, 52, 1.0))
+	);
+	background-image: -moz-linear-gradient(
+		top center,
+		rgba(118, 118, 118, 1.0) 0%, rgba(52, 52, 52, 1.0) 95%
+	);
+	/*bottom: 0;*/
+	height: 75px;
+	left: 0;
+	margin: auto;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	-webkit-box-shadow:0 3px 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:0 3px 10px rgba(0, 0, 0, 0.5);
+	box-shadow:0 3px 10px rgba(0, 0, 0, 0.5);
+	z-index: 1000;
+}
+
+/*#content {
+	width: 100%;
+	float: left;
+	margin: 0 auto;
+	margin-top: 75px;
+	overflow: hidden;
+	clear: both;
+}*/
+
+.details {
+	width: 30%;
+	float: left;
+}
+
+.graphics {
+	width: 65%;
+	float: left;
+}
+
+img {
+	width: 80%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0px 0px 30px #000;
+	-moz-box-shadow: 0px 0px 30px #000;
+	-webkit-box-shadow: 0px 0px 30px #000;
+}
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 3em;
+}
+
+h2 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	color: #efefef;
+	text-align: center;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	font-size: 1.5em;
+}
+
+a {
+	text-decoration: none;
+	color: #efefef;
+}
+
+a:hover {
+	color: rgb(148, 53, 54);
+}
+
+.fullName {
+	color: #888;
+}
+
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
+}
+
+.section{
+	text-align:center;
+}
