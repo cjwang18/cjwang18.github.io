@@ -5,7 +5,7 @@ body {
 	min-height: 100%;
 }
 
-#header {
+header {
 	background: linear-gradient(rgba(60, 60, 60, 0.7) 0%, rgba(30, 30, 30, 0.9) 95%);
 	/*bottom: 0;*/
 	height: 75px;
@@ -17,6 +17,12 @@ body {
 	width: 100%;
 	box-shadow:0 3px 10px rgba(0, 0, 0, 0.5);
 	z-index: 1000;
+
+	transition: top 0.7s ease-in-out;
+}
+
+.nav-up {
+	top: -75px;
 }
 
 /*#content {
