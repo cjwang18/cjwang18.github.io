@@ -6,7 +6,7 @@ cjwang18.github.io
 #### TODO List:
 
 [x] - Fix gradient cross-browser compatibility<br>
-[ ] - Lazy load slideshow images<br>
+[x] - Lazy load slideshow images<br>
 [ ] - Templating for portfolio page<br>
 [x] - Portfolio: hide header on scroll down, show on scroll up<br>
 [ ] - Responsive design
