@@ -38,8 +38,11 @@ $(document).ready(function () {
 			$(".fullName").addClass("grayed");
 			if (e.stopPropagation) e.stopPropagation();
 		} else {
-			$("#links").html("cj");
-			$(".fullName").removeClass("grayed");
+			// Prevent menu closing when clicking a link
+			if (e.currentTarget.id != "linkContainer") {
+				$("#links").html("cj");
+				$(".fullName").removeClass("grayed");	
+			}
 			if (e.stopPropagation) e.stopPropagation();
 		}
 	});
