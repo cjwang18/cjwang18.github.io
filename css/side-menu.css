@@ -25,15 +25,15 @@ This is the parent `<div>` that contains the menu and the content area.
 }
     #layout.active {
         position: relative;
-        left: 150px;
+        left: 180px;
     }
         #layout.active #menu {
-            left: 150px;
-            width: 150px;
+            left: 180px;
+            width: 180px;
         }
 
         #layout.active .menu-link {
-            left: 150px;
+            left: 180px;
         }
 
 
@@ -43,8 +43,8 @@ appears on the left side of the page.
 */
 
 #menu {
-    margin-left: -150px; /* "#menu" width */
-    width: 150px;
+    margin-left: -180px; /* "#menu" width */
+    width: 180px;
     position: fixed;
     top: 0;
     left: 0;

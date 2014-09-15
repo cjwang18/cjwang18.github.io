@@ -10,4 +10,5 @@ cjwang18.github.io
 [ ] - Templating for portfolio page<br>
 [x] - Portfolio: hide header on scroll down, show on scroll up<br>
 [ ] - Responsive design<br>
-[x] - Prevent expanding menu from closing after clicking a link
+[x] - Prevent expanding menu from closing after clicking a link<br>
+[ ] - Add social media
