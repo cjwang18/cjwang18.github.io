@@ -36,53 +36,53 @@ slideshowArr.push("9886");
 
 /*
 This function will return an array of size num that contains
-num number of items from the original array. 
+num number of items from the original array.
 */
 function randomGetFromDataArray(array, num) {
-	oArrSize = array.length; // original array size
-	var nArr = new Array(); // new array to be returned
+    oArrSize = array.length; // original array size
+    var nArr = new Array(); // new array to be returned
 
-	num = oArrSize; // set num to always return as many objects array has
+    num = oArrSize; // set num to always return as many objects array has
 
-	// always get random for first index
-	nArr[0] = Math.floor(Math.random() * oArrSize);
-	for (i=1 ; i<num ; i++) {
-		repeat = false; // bool to check if there are any repeats
-		nArr[i] = Math.floor(Math.random() * oArrSize);
-		for (j=0 ; j<(nArr.length-1) ; j++) {
-			if (nArr[i] == nArr[j]) {
-				repeat = true;
-			}
-		}
+    // always get random for first index
+    nArr[0] = Math.floor(Math.random() * oArrSize);
+    for (i = 1; i < num; i++) {
+        repeat = false; // bool to check if there are any repeats
+        nArr[i] = Math.floor(Math.random() * oArrSize);
+        for (j = 0; j < (nArr.length - 1); j++) {
+            if (nArr[i] == nArr[j]) {
+                repeat = true;
+            }
+        }
 
-		while(repeat) {
-			repeat = false;
-			nArr[i] = Math.floor(Math.random() * oArrSize);
-			for (j=0 ; j<(nArr.length-1) ; j++) {
-				if (nArr[i] == nArr[j]) {
-					repeat = true;
-				}
-			}
-		}
-	}
+        while (repeat) {
+            repeat = false;
+            nArr[i] = Math.floor(Math.random() * oArrSize);
+            for (j = 0; j < (nArr.length - 1); j++) {
+                if (nArr[i] == nArr[j]) {
+                    repeat = true;
+                }
+            }
+        }
+    }
 
-	for (i=0 ; i<nArr.length ; i++) {
-		oArrIndex = nArr[i];
-		nArr[i] = array[oArrIndex];
-	}
+    for (i = 0; i < nArr.length; i++) {
+        oArrIndex = nArr[i];
+        nArr[i] = array[oArrIndex];
+    }
 
-	return nArr;
+    return nArr;
 }
 
 function getRandomizedSlideshowImages() {
-	var temp = randomGetFromDataArray(slideshowArr, 31);
-	var arr = new Array();
+    var temp = randomGetFromDataArray(slideshowArr, 31);
+    var arr = new Array();
 
-	for (i=0 ; i<temp.length ; i++) {
-		var s = "./img/slideshow/IMG_" + temp[i] + ".jpg";
-		arr.push(s);
-	}
+    for (i = 0; i < temp.length; i++) {
+        var s = "./img/slideshow/IMG_" + temp[i] + ".jpg";
+        arr.push(s);
+    }
 
-	//console.log(arr);
-	return arr;
+    //console.log(arr);
+    return arr;
 }
