@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chun Ji {CJ} Wang</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/side-menu.css">
+    <style>
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .item {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<script id="photo-template" type="text/x-handlebars-template">
+    {{#categories}}
+        {{#each photos}}
+            <div class="item">
+                {{#if fromSlideshow}}
+                    <img class="pure-img" src="img/slideshow/IMG_{{fileNum}}.jpg"/>
+                {{else}}
+                    <img class="pure-img" src="img/photography/{{../../name}}/IMG_{{fileNum}}.jpg"/>
+                {{/if}}
+            </div>
+        {{/each}}
+    {{/categories}}
+</script>
+
+<body>
+    <div id="layout">
+        <div id="container"></div>
+    </div>
+
+    <script src="js/vendor/handlebars.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/vendor/isotope.pkgd.min.js"></script>
+    <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="js/photography.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-18967500-2', 'cjwang18.github.io');
+        ga('send', 'pageview');
+    </script>
+</body>
+
+</html>
