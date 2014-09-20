@@ -7,24 +7,68 @@
     <title>Chun Ji {CJ} Wang</title>
     <link href='http://fonts.googleapis.com/css?family=Roboto:300,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/side-menu.css">
     <style>
-        * {
+        #container * {
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
             box-sizing: border-box;
         }
-        .item {
-            width: 50%;
+
+        /* Start: Recommended Isotope styles */
+
+        /**** Isotope Filtering ****/
+
+        .isotope-item {
+            z-index: 2;
         }
+
+        .isotope-hidden.isotope-item {
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        /**** Isotope CSS3 transitions ****/
+
+        .isotope,
+        .isotope .isotope-item {
+            -webkit-transition-duration: 0.8s;
+            -moz-transition-duration: 0.8s;
+            transition-duration: 0.8s;
+        }
+
+        .isotope {
+            -webkit-transition-property: height, width;
+            -moz-transition-property: height, width;
+            transition-property: height, width;
+        }
+
+        .isotope .isotope-item {
+            -webkit-transition-property: -webkit-transform, opacity;
+            -moz-transition-property:    -moz-transform, opacity;
+            transition-property:         transform, opacity;
+        }
+
+        /**** disabling Isotope CSS3 transitions ****/
+
+        .isotope.no-transition,
+        .isotope.no-transition .isotope-item,
+        .isotope .isotope-item.no-transition {
+            -webkit-transition-duration: 0s;
+            -moz-transition-duration: 0s;
+            transition-duration: 0s;
+        }
+
+        /* End: Recommended Isotope styles */
     </style>
 </head>
 
 <script id="photo-template" type="text/x-handlebars-template">
     {{#categories}}
         {{#each photos}}
-            <div class="item">
+            <div class="item {{../name}} pure-u-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-4">
                 {{#if fromSlideshow}}
                     <img class="pure-img" src="img/slideshow/IMG_{{fileNum}}.jpg"/>
                 {{else}}
@@ -37,6 +81,29 @@
 
 <body>
     <div id="layout">
+        <!-- Menu toggle -->
+        <a href="#menu" id="menuLink" class="menu-link">
+            <!-- Hamburger icon -->
+            <span></span>
+        </a>
+        <!-- Actual menu -->
+        <div id="menu">
+            <nav class="pure-menu pure-menu-open">
+                <a class="pure-menu-heading" href="javascript:void(0);">chun ji {cj} wang</a>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="javascript:void(0);">photography</a></li>
+                    <li><a href="http://vimeo.com/c707h3j">cinematography</a></li>
+                    <li><a href="portfolio.html">portfolio</a></li>
+                    <li class="pure-menu-heading">categories</li>
+                    <li><a class="filter" href="javascript:void(0);" data-filter="*">all</a></li>
+                    <li><a class="filter" href="javascript:void(0);" data-filter=".nature">nature</a></li>
+                    <li><a class="filter" href="javascript:void(0);" data-filter=".people">people</a></li>
+                    <li><a class="filter" href="javascript:void(0);" data-filter=".places">places</a></li>
+                    <li><a class="filter" href="javascript:void(0);" data-filter=".things">things</a></li>
+                </ul>
+            </nav>
+        </div>
         <div id="container"></div>
     </div>
 
@@ -44,7 +111,9 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/vendor/isotope.pkgd.min.js"></script>
     <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="js/vendor/jquery.touchSwipe.min.js"></script>
     <script src="js/photography.js"></script>
+    <script src="js/ui.js"></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
