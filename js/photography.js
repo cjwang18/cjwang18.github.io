@@ -141,23 +141,30 @@ $(function() {
 });
 
 // Use isotope to render photography content
-// $(document).ready(function () {
 $(function() {
     var $container = $('#container').imagesLoaded(function() {
+        // initialize isotope
         $container.isotope({
             // options
             itemSelector: '.item',
             sortBy: 'random',
             animationEngine: 'best-available',
             masonry: {
-                columnWidth: '.item',
-                gutter: 0
+                columnWidth: '.item'
             }
         });
+        // call layout to fix gutter
+        $container.isotope('layout');
+        // fade-in
+        $('#container').animate({opacity: 1.0}, 250);
     });
     // filter items
     $('a.filter').click(function() {
         var filterValue = $(this).attr('data-filter');
         $container.isotope({ filter: filterValue });
+        // shuffle items if "all categories" chosen
+        if (filterValue === "*") {
+            $container.isotope('shuffle');
+        }
     });
 });
