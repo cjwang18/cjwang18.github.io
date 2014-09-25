@@ -33,3 +33,23 @@
     };
 
 }(this, this.document));
+
+// Handle swiping with jQuery
+$(function() {
+    function toggleClassOnSwipe() {
+        var active = 'active';
+        $('#layout').toggleClass(active);
+        $('#menu').toggleClass(active);
+        $('#menuLink').toggleClass(active);
+    }
+    //Enable swiping...
+    $("#menuLink").swipe({
+        swipeLeft: function() {
+            toggleClassOnSwipe();
+        },
+        swipeRight: function() {
+            toggleClassOnSwipe();
+        },
+        threshold: 10
+    });
+});
