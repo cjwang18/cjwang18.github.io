@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 #container {
     opacity: 0;
     transition: opacity .25s ease-in-out;
@@ -13,6 +17,30 @@
 
 .grid-sizer {
     height: 0;
+}
+
+#loading {
+    background: rgba(0,0,0,0.5);
+    color: rgba(255,255,255,0.8);
+    display: table;
+    height: 64px;
+    left: 50%;
+    margin: -64px 0 0 -64px;
+    opacity: 1;
+    position: fixed;
+    top: 50%;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    width: 128px;
+    padding: 0.5em;
+    z-index: 999999999999999;
+}
+
+#loading p {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
 }
 
 /* Start: Recommended Isotope styles */

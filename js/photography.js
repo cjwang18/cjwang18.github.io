@@ -148,7 +148,8 @@ $(function() {
     $('#container').append(items);
 
     // Use isotope to render photography content
-    var $container = $('#container').imagesLoaded(function() {
+    var $loading = $('#loading'),
+        $container = $('#container').imagesLoaded(function() {
         // initialize isotope
         $container.isotope({
             // options
@@ -162,7 +163,9 @@ $(function() {
         $container.isotope('layout');
         // fade-in
         $('#container').animate({opacity: 1.0}, 250);
+        $loading.animate({opacity: 0}, 250);
     });
+
     // filter items
     $('a.filter').click(function() {
         var filterValue = $(this).attr('data-filter');
@@ -178,6 +181,7 @@ $(function() {
         // only proceed if there are more images to insert
         if (i < itemArr.length) {
             if ($(window).scrollTop() == $(document).height() - $(window).height()) {
+                $loading.css({opacity: 1.0});
                 $('body').append('<div id="tempLoad"></div>');
                 // insert the HTML of new images to temporary div
                 items = getItemsHTML(i, determineNumItems(), itemArr, function(count) {
@@ -195,6 +199,7 @@ $(function() {
                         $container.children().css({ opacity: 1 });
                     });
                     $container.isotope('layout');
+                    $loading.animate({opacity: 0}, 250);
                 });
                 // cleanup the temporary div
                 $('#tempLoad').remove();
