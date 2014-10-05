@@ -156,7 +156,8 @@ $(function() {
             itemSelector: '.item',
             animationEngine: 'best-available',
             masonry: {
-                columnWidth: '.item'
+                columnWidth: '.grid-sizer',
+                gutter: '.gutter-sizer'
             }
         });
         // call layout to fix gutter

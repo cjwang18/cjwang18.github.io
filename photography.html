@@ -38,7 +38,10 @@
                 </ul>
             </nav>
         </div>
-        <div id="container" class="isotope pure-g"></div>
+        <div id="container" class="isotope">
+            <div class="grid-sizer"></div>
+            <div class="gutter-sizer"></div>
+        </div>
         <div id="loading">
             <p>loading</p>
         </div>
@@ -47,7 +50,7 @@
     <script id="photo-template" type="text/x-handlebars-template">
         {{#categories}}
             {{#each photos}}
-                <div class="item {{../name}} pure-u-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-4">
+                <div class="item {{../name}}">
                     {{#if fromSlideshow}}
                         <img class="pure-img" src="img/slideshow/IMG_{{fileNum}}.jpg"/>
                     {{else}}

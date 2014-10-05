@@ -1,24 +1,106 @@
+/*
+========================================
+Photography Page Styles
+========================================
+*/
+/* Style to hide horizontal scroll */
 body {
     overflow-x: hidden;
 }
 
-#container {
+/* Styles for isotope container */
+.isotope {
     opacity: 0;
     transition: opacity .25s ease-in-out;
     -moz-transition: opacity .25s ease-in-out;
     -webkit-transition: opacity .25s ease-in-out;
+    min-width: 100%;
 }
 
-.pure-g > div {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+/* Styles for isotope clear fix */
+.isotope:after {
+    content: '';
+    display: block;
+    clear: both;
 }
 
-.grid-sizer {
-    height: 0;
+/*
+========================================
+Responsive Isotope Layout
+========================================
+*/
+/* < 568px */
+/* Style for width of isotope item */
+.grid-sizer,
+.isotope .item {
+    width: 100%;
 }
 
+/* Style for spacing between vertically-adjacent isotope items */
+.isotope .item {
+    margin-bottom: 2%;
+}
+
+/* Style for spacing between horizontally-adjacent isotope items*/
+.gutter-sizer {
+    width: 0%;
+}
+
+/* >= 568px */
+@media screen and (min-width: 35.5em) {
+    .grid-sizer,
+    .isotope .item {
+        width: 49.5%;
+    }
+
+    .isotope .item {
+        margin-bottom: 1%;
+    }
+
+    .gutter-sizer {
+        width: 1%;
+    }
+}
+
+/* >= 1024px */
+@media screen and (min-width: 64em) {
+    .grid-sizer,
+    .isotope .item {
+        width: 32.667%;
+    }
+
+    .isotope .item {
+        margin-bottom: 1%;
+    }
+
+    .gutter-sizer {
+        width: 1%;
+    }
+}
+
+
+/* >= 1280px */
+@media screen and (min-width: 80em) {
+    .grid-sizer,
+    .isotope .item {
+        width: 24.25%;
+    }
+
+    .isotope .item {
+        margin-bottom: 1%;
+    }
+
+    .gutter-sizer {
+        width: 1%;
+    }
+}
+
+/*
+========================================
+Loading Indicator
+========================================
+*/
+/* Styles for loading indicator container */
 #loading {
     background: rgba(0,0,0,0.5);
     color: rgba(255,255,255,0.8);
@@ -37,19 +119,9 @@ body {
     z-index: 999999999999999;
 }
 
+/* Styles for loading indicator text */
 #loading p {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
 }
-
-/* Start: Recommended Isotope styles */
-
-/**** clear fix ****/
-.isotope:after {
-    content: '';
-    display: block;
-    clear: both;
-}
-
-/* End: Recommended Isotope styles */
