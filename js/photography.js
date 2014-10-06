@@ -135,11 +135,9 @@ $(function() {
     // Use Handlebars templating to fill in photography HTML content
     var source   = $("#photo-template").html(),
         template = Handlebars.compile(source);
-    var html = template(photography);
-    var itemArr = shuffleArray($.map($.parseHTML(html), function(val, i) {
-        if ($(val).hasClass('item'))
-            return val;
-    }));
+    var html = template(photography).split(",");
+    html.splice(html.length - 1); // remove extra whitespace element from array
+    var itemArr = shuffleArray(html);
 
     var i = 0;
     var items = getItemsHTML(i, determineNumItems(), itemArr, function(count) {
@@ -242,7 +240,7 @@ function getItemsHTML(i, n, arr, callback) {
         // console.log('i: ' + i);
         // console.log('l: ' + l);
         // console.log('arr.length: ' + arr.length);
-        html += arr[i].outerHTML;
+        html += arr[i];
         i++;
     }
     callback((n - (l - i)));
