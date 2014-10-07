@@ -136,7 +136,7 @@ $(function() {
     var source   = $("#photo-template").html(),
         template = Handlebars.compile(source);
     var html = template(photography).split(",");
-    html.splice(html.length - 1); // remove extra whitespace element from array
+    html.pop(); // remove extra whitespace element from array
     var itemArr = shuffleArray(html);
 
     var i = 0;
