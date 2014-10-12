@@ -11,5 +11,5 @@ cjwang18.github.io
 [x] - Portfolio: hide header on scroll down, show on scroll up<br>
 [ ] - Responsive design<br>
 [x] - Prevent expanding menu from closing after clicking a link<br>
-[ ] - Add social media
+[ ] - Add social media<br>
 [ ] - Redesign photography page

@@ -21,7 +21,7 @@ $(function() {
             {
                 "title": "A Media Aggregator",
                 "desc": "dynamically presents different content from YouTube, Vimeo, 500px, Hype Machine, and even news, weather and restaurant suggestions! Check it out!",
-                "link": "http://www-scf.usc.edu/~chunjiwa/itp301/assignments/final_project/",
+                "link": "http://cjwang18.github.io/media-aggregator",
                 "img": "media_aggregator_1.jpg"
             },
             {
