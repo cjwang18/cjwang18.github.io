@@ -1,31 +1,14 @@
 var slideshowArr = new Array();
-slideshowArr.push("0156");
-slideshowArr.push("0684");
-slideshowArr.push("1362");
-slideshowArr.push("1373");
-slideshowArr.push("1417");
-slideshowArr.push("1442");
-slideshowArr.push("5912");
-slideshowArr.push("5980");
-slideshowArr.push("6761");
-slideshowArr.push("6800");
-slideshowArr.push("6939");
+slideshowArr.push("0820");
+slideshowArr.push("1712");
+slideshowArr.push("2331");
 slideshowArr.push("7484");
-slideshowArr.push("7673");
-slideshowArr.push("7934");
-slideshowArr.push("8177");
-slideshowArr.push("8977");
+slideshowArr.push("8351");
 slideshowArr.push("8989");
-slideshowArr.push("9055");
-slideshowArr.push("9113");
-slideshowArr.push("9157");
 slideshowArr.push("9220");
-slideshowArr.push("9292");
 slideshowArr.push("9330");
-slideshowArr.push("9400");
-slideshowArr.push("9464");
-slideshowArr.push("9522");
-slideshowArr.push("9886");
+slideshowArr.push("9423");
+slideshowArr.push("9870");
 
 /*
 This function will return an array of size num that contains
