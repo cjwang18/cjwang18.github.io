@@ -4,32 +4,70 @@ var photography  = {
             "name": "nature",
             "photos": [
                 {
-                    "fileNum": "6939",
+                    "fileNum": "0135",
+                },
+                {
+                    "fileNum": "0156",
+                },
+                {
+                    "fileNum": "0515",
+                },
+                {
+                    "fileNum": "0820",
                     "fromSlideshow": true
+                },
+                {
+                    "fileNum": "0840",
+                },
+                {
+                    "fileNum": "1690",
+                },
+                {
+                    "fileNum": "1695",
+                },
+                {
+                    "fileNum": "6939",
+                },
+                {
+                    "fileNum": "7347",
                 },
                 {
                     "fileNum": "7484",
                     "fromSlideshow": true
                 },
                 {
-                    "fileNum": "9055",
+                    "fileNum": "8330",
+                },
+                {
+                    "fileNum": "8351",
                     "fromSlideshow": true
+                },
+                {
+                    "fileNum": "9001",
+                },
+                {
+                    "fileNum": "9055",
                 },
                 {
                     "fileNum": "9113",
-                    "fromSlideshow": true
+                },
+                {
+                    "fileNum": "9131",
+                },
+                {
+                    "fileNum": "9156",
                 },
                 {
                     "fileNum": "9157",
-                    "fromSlideshow": true
                 },
                 {
                     "fileNum": "9292",
-                    "fromSlideshow": true
                 },
                 {
                     "fileNum": "9522",
-                    "fromSlideshow": true
+                },
+                {
+                    "fileNum": "9657",
                 },
             ]
         },
@@ -37,57 +75,106 @@ var photography  = {
             "name": "people",
             "photos": [
                 {
+                    "fileNum": "0308",
+                },
+                {
+                    "fileNum": "3456-Edit",
+                },
+                {
+                    "fileNum": "3539-Edit",
+                },
+                {
+                    "fileNum": "5886",
+                },
+                {
                     "fileNum": "5912",
-                    "fromSlideshow": true
                 },
                 {
                     "fileNum": "5980",
-                    "fromSlideshow": true
+                },
+                {
+                    "fileNum": "7539",
+                },
+                {
+                    "fileNum": "7628",
                 },
                 {
                     "fileNum": "7673",
-                    "fromSlideshow": true
                 },
                 {
-                    "fileNum": "8177",
-                    "fromSlideshow": true
-                }
+                    "fileNum": "8179",
+                },
+                {
+                    "fileNum": "8567",
+                },
+                {
+                    "fileNum": "9886",
+                },
+                {
+                    "fileNum": "9939",
+                },
             ]
         },
         {
             "name": "places",
             "photos": [
                 {
-                    "fileNum": "0156",
-                    "fromSlideshow": true
+                    "fileNum": "0177",
+                },
+                {
+                    "fileNum": "0281",
                 },
                 {
                     "fileNum": "0684",
-                    "fromSlideshow": true
+                },
+                {
+                    "fileNum": "0699-Edit",
+                },
+                {
+                    "fileNum": "0865",
+                },
+                {
+                    "fileNum": "0933",
+                },
+                {
+                    "fileNum": "1324",
                 },
                 {
                     "fileNum": "1362",
-                    "fromSlideshow": true
                 },
                 {
                     "fileNum": "1373",
-                    "fromSlideshow": true
                 },
                 {
                     "fileNum": "1417",
-                    "fromSlideshow": true
                 },
                 {
                     "fileNum": "1442",
+                },
+                {
+                    "fileNum": "1817",
+                },
+                {
+                    "fileNum": "1878",
+                },
+                {
+                    "fileNum": "2331",
                     "fromSlideshow": true
+                },
+                {
+                    "fileNum": "7489",
+                },
+                {
+                    "fileNum": "7555",
                 },
                 {
                     "fileNum": "7934",
-                    "fromSlideshow": true
+                },
+                {
+                    "fileNum": "8784",
                 },
                 {
                     "fileNum": "8977",
-                    "fromSlideshow": true
                 },
                 {
                     "fileNum": "9220",
@@ -98,11 +185,23 @@ var photography  = {
                     "fromSlideshow": true
                 },
                 {
+                    "fileNum": "9355",
+                },
+                {
                     "fileNum": "9400",
+                },
+                {
+                    "fileNum": "9419",
+                },
+                {
+                    "fileNum": "9423",
                     "fromSlideshow": true
                 },
                 {
-                    "fileNum": "9886",
+                    "fileNum": "9693",
+                },
+                {
+                    "fileNum": "9870",
                     "fromSlideshow": true
                 },
             ]
@@ -111,20 +210,54 @@ var photography  = {
             "name": "things",
             "photos": [
                 {
-                    "fileNum": "6761",
+                    "fileNum": "1712",
                     "fromSlideshow": true
                 },
                 {
+                    "fileNum": "1751",
+                },
+                {
+                    "fileNum": "1758",
+                },
+                {
+                    "fileNum": "1770",
+                },
+                {
+                    "fileNum": "1816",
+                },
+                {
+                    "fileNum": "2830",
+                },
+                {
+                    "fileNum": "3232-Edit",
+                },
+                {
+                    "fileNum": "6761",
+                },
+                {
+                    "fileNum": "6776",
+                },
+                {
                     "fileNum": "6800",
-                    "fromSlideshow": true
+                },
+                {
+                    "fileNum": "6820",
                 },
                 {
                     "fileNum": "8989",
                     "fromSlideshow": true
                 },
                 {
+                    "fileNum": "9005",
+                },
+                {
+                    "fileNum": "9006",
+                },
+                {
                     "fileNum": "9464",
-                    "fromSlideshow": true
+                },
+                {
+                    "fileNum": "9854",
                 },
             ]
         }
